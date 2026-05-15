@@ -56,6 +56,14 @@ public class ImagesController {
 
         return new ResponseEntity<>(image.getFile(), headers, HttpStatus.OK);
     }
+@GetMapping
+public ResponseEntity<ImageDT search>
+    @RequestParam(value = "extension", required = false, defaultValue = "")String extension
+            @RequestParam(value = "")
+
+            ){
+
+    }
 
     //método que cria a url da imagem
     private URI buildImageURL(Image image) {
